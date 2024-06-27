@@ -1,0 +1,106 @@
+
+
+/* Photo Upload Card */
+
+.photo-upload-card {
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Slightly more rounded corners */
+  width: 85%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.photo-upload-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.photo-upload-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center; /* Centered heading */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Photo Grid */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px; /* Increased gap */
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* More rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.photo-item:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for image hover */
+}
+
+.photo-item img:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+.photo-item button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.photo-item button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+input[type="file"] {
+  margin-bottom: 15px; /* Increased margin */
+  padding: 10px; /* Added padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus and hover */
+}
+
+input[type="file"]:focus,
+input[type="file"]:hover {
+  border-color: #007bff; /* Blue border color on focus and hover */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Shadow on focus and hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,186 @@
+/* BoatSpecifications.module.css */
+
+/* .boat-specifications {
+  max-width: 600px;
+  width: 85%; 
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e90ff'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.selected-amenities {
+  margin-top: 20px;
+}
+
+.selected-amenities h4 {
+  margin-bottom: 10px;
+}
+
+.selected-amenities ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.selected-amenities li {
+  margin-bottom: 5px;
+}
+
+button[type='submit'] {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #060708;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #070708;
+} */
+
+
+
+
+/* Boat Specifications */
+
+.boat-specifications {
+  max-width: 600px;
+  width: 85%;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Slightly more rounded corners */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.boat-specifications:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus and hover */
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+select:focus {
+  border-color: #1e90ff; /* Blue border color on focus */
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.2); /* Shadow on focus */
+}
+
+input[type='text']:hover,
+input[type='number']:hover,
+select:hover {
+  border-color: #1e90ff; /* Blue border color on hover */
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e90ff'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.selected-amenities {
+  margin-top: 20px;
+}
+
+.selected-amenities h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.selected-amenities ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.selected-amenities li {
+  margin-bottom: 5px;
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for list items */
+}
+
+button[type='submit'] {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #060708;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+button[type='submit']:hover {
+  background-color: #070708;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
